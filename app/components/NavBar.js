@@ -3,11 +3,11 @@ export default function NavBar() {
     <header>
       <nav className="w-full absolute top-0">
         <div className="bg-white flex">
-          <div>logo de la empresa</div>
+          <div>ATENEA</div>
           <div className="flex">
-            <div className="mx-2">inicio</div>
-            <div className="mx-2">login</div>
-            <div className="mx-2">contactenos</div>
+            <div className="mx-8">Rastrear</div>
+            <div className="mx-7">Sucursales</div>
+            <div className="mx-7">Nosotros</div>
           </div>
         </div>
       </nav>

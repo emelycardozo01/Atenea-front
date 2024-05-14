@@ -19,11 +19,13 @@ export default function Home() {
 
   return (
     <div className="flex w-full h-[100vh]">
-      <div className="w-[50%]">HOLA</div>
+      <div className="w-[50%] flex flex-col items-center justify-center">
+        imagen 
+        </div>
 
       <div className="w-[50%] flex flex-col items-center justify-center">
         <div className="card-header text-center">
-          <h3>Iniciar sesión</h3>
+          Iniciar sesión
         </div>
 
         <div className="">
@@ -58,7 +60,7 @@ export default function Home() {
           </button>
           <button
             onClick={handleMenu}
-            className="rounded-xl py-2 bg-gray-50 w-52"
+            className="rounded-xl py-2 bg-gray-50 w-52 mb-3"
           >
             ¿Olvido su Contraseña?
           </button>

@@ -1,7 +1,7 @@
 export default function NavBar() {
   return (
-    <header>
-      <nav className="w-full absolute top-0">
+    
+      <nav className="w-full">
         <div className="bg-white flex">
           <div>ATENEA</div>
           <div className="flex">
@@ -11,6 +11,6 @@ export default function NavBar() {
           </div>
         </div>
       </nav>
-    </header>
+   
   );
 }

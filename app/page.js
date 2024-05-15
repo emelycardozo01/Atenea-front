@@ -17,40 +17,68 @@ export default function Home() {
     console.log("respuesta desde el evento", resp);
   };
 
+  const img =
+    "https://t3.ftcdn.net/jpg/06/17/13/26/240_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg";
+
+  const img2 = 
+    "https://estrategias-marketing-online.com/wp-content/uploads/clientes-empresariales.jpg";
+
   return (
-    <div className="flex w-full h-[100vh]">
+    <div className="flex items-center border-[#223d86] border rounded-3xl">
       <div className="w-[50%] flex flex-col items-center justify-center">
-        imagen 
-        </div>
+          <Image
+              src={img2}
+              width={700}
+              height={1000}
+              alt="img-athenea"
+              objectFit="cover"
+              className="w-full"
+            />
+      </div>
 
       <div className="w-[50%] flex flex-col items-center justify-center p-10">
-        <div className="w-[50%] bg-red-500 h-auto">
+        <div className="w-[50%] bg-[#FFFFFF] rounded-lg h-auto flex flex-col gap-10 p-10">
+          <div>
+            <Image
+              src={img}
+              width={100}
+              height={100}
+              alt="logo-athenea"
+              objectFit="cover"
+              className="rounded-full"
+            />
+          </div>
 
-          <div className="bg-blue-500">
-            <div className="card-header text-left text-xl font-bold">
+          <div className="">
+            <div className="card-header text-left text-xl font-bold text-[#192752]">
               Iniciar sesión
             </div>
-            <div className="text-left text-xs font-normal text-[#D1D1D1]">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+            <div className="text-left text-sm font-medium">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when
             </div>
           </div>
 
-          <div className="flex flex-col justify-center">
-            <div className="input-group mb-3">
+          <div className="flex flex-col mb-[10px] justify-center">
+            <div className="input-group mb-3 flex flex-col">
+              <label htmlFor="correo" className="font-medium">Correo Electrónico</label>
               <input
                 type="email"
-                className="rounded-xl px-2"
-                placeholder="Correo electronico"
+                className="rounded-md p-3 border-solid border-2 border-[#ccc] focus:outline-none text-xs"
+                placeholder="example@correo.com"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
                 ref={refUsuario}
               />
             </div>
-            <div className="input-group mb-3">
+            <div className="input-group mb-3 flex flex-col">
+              <label htmlFor="password" className="font-medium">Contraseña</label>
               <input
+                id="password"
                 type="password"
-                className="rounded-xl px-2"
-                placeholder="Contraseña"
+                className="rounded-md p-3 border-solid border-2 border-[#ccc] focus:outline-none text-xs"
+                placeholder="*********"
                 aria-label="Contraseña"
                 aria-describedby="basic-addon2"
                 ref={refClave}
@@ -58,19 +86,23 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col items-center">
             <button
               onClick={handleMenu}
-              className="rounded-xl py-2 bg-gray-50 w-52 mb-3"
+              className="rounded-xl py-2 bg-[#4186f0] text-[#ffffff] text-medium hover:bg-[#2b68e5] w-52 mb-3"
             >
-              Iniciar
+              Iniciar sesión
             </button>
-            <button
-              onClick={handleMenu}
-              className="rounded-xl py-2 bg-gray-50 w-52 mb-3"
-            >
-              ¿Olvido su Contraseña?
-            </button>
+            <div className="flex w-full items-center">
+              <hr className="w-full mr-4" />
+              <button
+                onClick={handleMenu}
+                className="text-[#D1D1D1] text-xs font-normal italic hover:text-[#000000] whitespace-nowrap"
+              >
+                ¿Olvidó su contraseña?
+              </button>
+              <hr className="w-full ml-4" />
+            </div>
           </div>
         </div>
       </div>

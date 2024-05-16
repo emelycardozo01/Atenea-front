@@ -21,7 +21,7 @@ export default function Home() {
     "https://t3.ftcdn.net/jpg/06/17/13/26/240_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg";
 
   const img2 = 
-    "https://estrategias-marketing-online.com/wp-content/uploads/clientes-empresariales.jpg";
+    "https://st3.depositphotos.com/1000816/19162/i/1600/depositphotos_191624638-stock-photo-business-leader-shaking-hands-with.jpg";
 
   return (
     <div className="flex items-center border-[#223d86] border rounded-3xl">

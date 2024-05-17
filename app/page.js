@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
+// import { useRouter } from "next/router";
 import { useRef } from "react";
 
 export default function Home() {
   const refUsuario = useRef(null);
   const refClave = useRef(null);
+  // const router = useRouter()
 
   const handleMenu = async () => {
     const data = {
@@ -15,37 +17,50 @@ export default function Home() {
     console.log(data);
     const resp = await enviarData(URL, data);
     console.log("respuesta desde el evento", resp);
+    // router.push('/logged')
   };
 
-  const img =
-    "https://t3.ftcdn.net/jpg/06/17/13/26/240_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg";
-
   const img2 = 
-    "https://st3.depositphotos.com/1000816/19162/i/1600/depositphotos_191624638-stock-photo-business-leader-shaking-hands-with.jpg";
+    "https://st2.depositphotos.com/2931363/7602/i/950/depositphotos_76029417-stock-photo-just-sign-here-handsome-young.jpg";
 
   return (
-    <div className="flex items-center border-[#223d86] border rounded-3xl">
-      <div className="w-[50%] flex flex-col items-center justify-center">
-          <Image
-              src={img2}
+    <div className="flex border-[#223d86] border rounded-3xl">
+      <div className="w-[50%] flex flex-col items-center justify-start">
+        <div className="">
+            <Image
+              src={"/images/ImgLateralInicio.jpg"}
               width={700}
               height={1000}
               alt="img-athenea"
               objectFit="cover"
-              className="w-full"
+              className="w-full rounded-tl-3xl"
             />
+        </div>
+            <span className="px-5 pb-6 text-start w-full flex flex-col">
+            <span className="font-semibold text-[#192752]">
+                Teléfono: 
+                <span className="font-normal text-sm text-[#353535]"> 1234567890</span>
+              </span>
+              <span className="font-semibold text-[#192752]">
+                Correo: 
+                <span className="font-normal text-sm text-[#353535]"> ateneacorporate@atenea.com</span>
+              </span>
+              <span className="font-semibold text-[#192752]">
+                Dirección: 
+                <span className="font-normal text-sm text-[#353535]"> Calle 59 sur #45-78 norte</span>
+              </span>
+            </span>
       </div>
 
       <div className="w-[50%] flex flex-col items-center justify-center p-10">
-        <div className="w-[50%] bg-[#FFFFFF] rounded-lg h-auto flex flex-col gap-10 p-10">
+        <div className="w-[70%] bg-[#FFFFFF] rounded-lg h-auto flex flex-col gap-10 p-10">
           <div>
             <Image
-              src={img}
+              src={"/images/LogoAzul.png"}
               width={100}
               height={100}
               alt="logo-athenea"
               objectFit="cover"
-              className="rounded-full"
             />
           </div>
 
@@ -54,15 +69,13 @@ export default function Home() {
               Iniciar sesión
             </div>
             <div className="text-left text-sm font-medium">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when
+              En Atenea, entendemos que el tiempo es oro. Por eso, ofrecemos soluciones de envío rápidas, seguras y confiables para que tus paquetes lleguen a su destino sin demoras.
             </div>
           </div>
 
           <div className="flex flex-col mb-[10px] justify-center">
             <div className="input-group mb-3 flex flex-col">
-              <label htmlFor="correo" className="font-medium">Correo Electrónico</label>
+              <label htmlFor="correo" className="font-medium">Correo electrónico</label>
               <input
                 type="email"
                 className="rounded-md p-3 border-solid border-2 border-[#ccc] focus:outline-none text-xs"

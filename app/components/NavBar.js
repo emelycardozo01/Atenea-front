@@ -7,7 +7,7 @@ export default function NavBar() {
       <div className="bg-[#2c69e4] flex text-[#FFFFFF] p-4 items-center">
         <div className="relative w-[50px] h-[50px]">
           <Image
-            src="/images/logo.png"
+            src="/images/Logo.png"
             alt="Descripción de la imagen"
             layout="fill"
             objectFit="contain"

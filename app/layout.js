@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <header>
           <NavBar />
         </header>
-        <div className="w-full py-6 px-12">{children}</div>
+        <div className="w-full flex justify-center py-6 px-12">{children}</div>
       </body>
     </html>
   );

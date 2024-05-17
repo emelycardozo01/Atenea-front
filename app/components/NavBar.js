@@ -16,8 +16,8 @@ export default function NavBar() {
         </div>
         <div className="flex">
           <Link href={"/rastrear"} className="mx-8 text-xl cursor-pointer font-medium">Rastrear</Link>
-          <div className="mx-7 text-xl cursor-pointer font-medium">Sucursales</div>
-          <div className="mx-7 text-xl cursor-pointer font-medium">Nosotros</div>
+          <Link href={"/sucursales"} className="mx-8 text-xl cursor-pointer font-medium">Sucursales</Link>
+          <Link href={"/nosotros"} className="mx-8 text-xl cursor-pointer font-medium">Nosotros</Link>
         </div>
       </div>
     </nav>

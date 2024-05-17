@@ -1,12 +1,13 @@
 import React from "react";
-import Inicio from "../components/Inicio";
+import mapa from '../sucursales/page';
 
 const page = () => {
   return (
     <div>
-      Aloha
+      Sucursal 
+
     </div>
   );
-};
+}
 
 export default page;

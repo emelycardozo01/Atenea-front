@@ -20,36 +20,51 @@ export default function Home() {
     // router.push('/logged')
   };
 
-  const img2 = 
+  const img2 =
     "https://st2.depositphotos.com/2931363/7602/i/950/depositphotos_76029417-stock-photo-just-sign-here-handsome-young.jpg";
 
   return (
     <div className="flex border-[#223d86] border rounded-3xl">
       <div className="w-[50%] flex flex-col items-center justify-start">
         <div className="">
-            <Image
-              src={"/images/ImgLateralInicio.jpg"}
-              width={400}
-              height={6000}
-              alt="img-athenea"
-              objectFit="cover"
-              className="w-full rounded-tl-3xl"
-            />
+          <Image
+            src={"/images/ImgLateralInicio.jpg"}
+            width={400}
+            height={6000}
+            alt="img-athenea"
+            objectFit="cover"
+            className="w-full rounded-tl-3xl"
+          />
         </div>
-            <span className="px-5 pb-6 text-center w-full flex flex-col ">
-            <span className="font-semibold text-[#192752]">
-                Teléfono: 
-                <span className="font-normal text-sm text-[#353535]"> 1234567890</span>
-              </span>
-              <span className="font-semibold text-[#192752]">
-                Correo: 
-                <span className="font-normal text-sm text-[#353535]"> ateneacorporate@atenea.com</span>
-              </span>
-              <span className="font-semibold text-[#192752]">
-                Dirección: 
-                <span className="font-normal text-sm text-[#353535]"> Calle 59 sur #45-78 norte</span>
-              </span>
+        <span className="px-5 pb-6 text-center w-full flex flex-col ">
+          <span className="font-semibold text-[#192752]">
+            Teléfono
+            <span className="font-normal text-sm text-[#353535]">
+              {" (601)4802456 - (601)5021808"}
             </span>
+          </span>
+          <span className="font-semibold text-[#192752]">
+            Correo 
+            <span className="font-normal text-sm text-[#353535]">
+              {" "}
+              ateneacorporate@atenea.com
+            </span>
+          </span>
+          <span className="font-semibold text-[#192752]">
+            Fax
+            <span className="font-normal text-sm text-[#353535]">
+              {" "}
+              223-158-17070
+            </span>
+          </span>
+          <span className="font-semibold text-[#192752]">
+            Dirección
+            <span className="font-normal text-sm text-[#353535]">
+              {" "}
+              Calle 59 sur #45-78 norte
+            </span>
+          </span>
+        </span>
       </div>
 
       <div className="w-[50%] flex flex-col items-center justify-center p-10">
@@ -69,13 +84,17 @@ export default function Home() {
               Iniciar sesión
             </div>
             <div className="text-left text-sm font-medium">
-              En Atenea, entendemos que el tiempo es oro. Por eso, ofrecemos soluciones de envío rápidas, seguras y confiables para que tus paquetes lleguen a su destino sin demoras.
+              En Atenea, entendemos que el tiempo es oro. Por eso, ofrecemos
+              soluciones de envío rápidas, seguras y confiables para que tus
+              paquetes lleguen a su destino sin demoras.
             </div>
           </div>
 
           <div className="flex flex-col mb-[10px] justify-center">
             <div className="input-group mb-3 flex flex-col">
-              <label htmlFor="correo" className="font-medium">Correo electrónico</label>
+              <label htmlFor="correo" className="font-medium">
+                Correo electrónico
+              </label>
               <input
                 type="email"
                 className="rounded-md p-3 border-solid border-2 border-[#ccc] focus:outline-none text-xs"
@@ -86,7 +105,9 @@ export default function Home() {
               />
             </div>
             <div className="input-group mb-3 flex flex-col">
-              <label htmlFor="password" className="font-medium">Contraseña</label>
+              <label htmlFor="password" className="font-medium">
+                Contraseña
+              </label>
               <input
                 id="password"
                 type="password"

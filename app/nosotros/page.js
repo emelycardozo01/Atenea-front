@@ -35,15 +35,15 @@ const page = () => {
           sociedades en las que operamos.
         </div>
         <div>
-        <div className="items-center flex flex-col">
-          <Image
-            src={"/images/LogoAzul.png"}
-            width={100}
-            height={100}
-            alt="logo-athenea"
-            objectFit="cover"
-          />
-        </div>
+          <div className="items-center flex flex-col">
+            <Image
+              src={"/images/LogoAzul.png"}
+              width={75}
+              height={75}
+              alt="logo-athenea"
+              objectFit="cover"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -29,14 +29,14 @@ export default function Home() {
         <div className="">
             <Image
               src={"/images/ImgLateralInicio.jpg"}
-              width={700}
-              height={1000}
+              width={400}
+              height={6000}
               alt="img-athenea"
               objectFit="cover"
               className="w-full rounded-tl-3xl"
             />
         </div>
-            <span className="px-5 pb-6 text-start w-full flex flex-col">
+            <span className="px-5 pb-6 text-center w-full flex flex-col ">
             <span className="font-semibold text-[#192752]">
                 Teléfono: 
                 <span className="font-normal text-sm text-[#353535]"> 1234567890</span>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const page = () => {
   return (
-    <div className="flex border-[#223d86] border rounded-3xl p-1.5 px-20 w-[50%]">
+    <div className="flex border-[#223d86] border rounded-3xl p-1.5 px-20 w-[50%] h-[60%] items-center">
       <div className="">
         <div className="mb-4 card-header text-4xl font-bold text-[#192752] text-center">
           Nosotros

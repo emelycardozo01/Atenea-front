@@ -24,9 +24,9 @@ export default function Home() {
     "https://st2.depositphotos.com/2931363/7602/i/950/depositphotos_76029417-stock-photo-just-sign-here-handsome-young.jpg";
 
   return (
-    <div className="flex border-[#223d86] border rounded-3xl">
+    <div className="flex border-[#223d86] border rounded-3xl mx-60">
       <div className="w-[50%] flex flex-col items-center justify-start">
-        <div className="">
+        <div className="w-full">
           <Image
             src={"/images/ImgLateralInicio.jpg"}
             width={400}
@@ -36,7 +36,7 @@ export default function Home() {
             className="w-full rounded-tl-3xl"
           />
         </div>
-        <span className="px-5 pb-6 text-center w-full flex flex-col ">
+        <div className="px-5 pb-6 text-center w-full flex flex-col ">
           <span className="font-semibold text-[#192752]">
             Teléfono
             <span className="font-normal text-sm text-[#353535]">
@@ -64,7 +64,7 @@ export default function Home() {
               Calle 59 sur #45-78 norte
             </span>
           </span>
-        </span>
+        </div>
       </div>
 
       <div className="w-[50%] flex flex-col items-center justify-center p-10">

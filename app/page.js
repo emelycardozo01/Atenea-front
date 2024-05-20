@@ -131,7 +131,7 @@ export default function Home() {
               <hr className="w-full mr-4" />
               <button
                 onClick={handleMenu}
-                className="text-[#D1D1D1] text-xs font-normal italic hover:text-[#000000] whitespace-nowrap"
+                className="text-[#646464] text-xs font-normal italic hover:text-[#000000] whitespace-nowrap"
               >
                 ¿Olvidó su contraseña?
               </button>
